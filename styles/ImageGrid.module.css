@@ -1,0 +1,32 @@
+.wrapper{
+    
+    width: 50rem;
+    max-width: 100%;
+    column-width: 10rem;
+    place-items: center;
+    padding: 10px 0;
+    animation: fade-up 0.5s ease-in-out;
+}
+
+.image_wrapper{
+    position: relative;
+    border-radius: 4px;
+    width: 100%;
+    padding-top: 100%;
+    margin-top: 2rem;
+}
+
+.image{
+    border-radius: 8px;
+}
+
+
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
