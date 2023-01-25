@@ -1,3 +1,4 @@
+import ImageKit from "imagekit";
 
 
 export async function getImagesWithTags(tags:string[]){
@@ -13,3 +14,9 @@ export async function getImagesWithTags(tags:string[]){
 
     return result;
 }
+
+export const imageKit = new ImageKit({
+    publicKey:process.env.IMAGEKIT_PUBLIC_KEY || '',
+    privateKey:process.env.IMAGEKIT_PRIVATE_KEY || '',
+    urlEndpoint:process.env.IMAGEKIT_URL_ENDPOINT  || ''
+  })

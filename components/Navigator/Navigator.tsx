@@ -74,14 +74,14 @@ const NavigatorOptions:React.FC<NavigatorOptionsProps> =(props)=>{
                 {options.map((o,index)=>{
                     if(o.link){
                         return(
-                            <Link href={o.link} className={styles.option}>
+                            <Link key={index} href={o.link} className={styles.option}>
                                 {o.title}
                             </Link>
                         )
                     }
                     else{
                         return(
-                            <div className={styles.option} onClick={action}>
+                            <div key={index} className={styles.option} onClick={action}>
                                 {o.title}
                             </div >
                         )

@@ -4,12 +4,12 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 
 import { InferGetStaticPropsType } from 'next'
-import { getImagesWithTags } from '@/lib/api'
+import {  imageKit } from '@/lib/api'
 import { CustomImage, ImageGrid } from '@/components'
 
 
 export default function Work({result}:InferGetStaticPropsType<typeof getStaticProps>) {
-  const images = result.data
+  const images = result
   return (
     <>
     <Head>
@@ -29,7 +29,9 @@ export default function Work({result}:InferGetStaticPropsType<typeof getStaticPr
 }
 
 export async function getStaticProps() {
-  const result = await getImagesWithTags(['food','model','resort'])
+  const result = await imageKit.listFiles({
+    tags:['food','model','resort']
+  })
   return {
     props: {
       result,
