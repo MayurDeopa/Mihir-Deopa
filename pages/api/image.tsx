@@ -17,9 +17,9 @@ export default async function handler(
 
   if(tags){
     let imagekit = new ImageKit({
-      publicKey:process.env.IMAGEKIT_PUBLIC_KEY || '',
-      privateKey:process.env.IMAGEKIT_PRIVATE_KEY || '',
-      urlEndpoint:process.env.IMAGEKIT_URL_ENDPOINT || ''
+      publicKey:'public_qtgfk/FOFZxZiCLmuYHiGmTWJn4=',
+      privateKey:'private_SDJePxajZpobaUO8EPbbyt4DLwo=',
+      urlEndpoint:'https://ik.imagekit.io/artboomer'
     })
   
     try{
