@@ -30,7 +30,7 @@ export default function Work({result}:InferGetStaticPropsType<typeof getStaticPr
 
 export async function getStaticProps() {
   const result = await imageKit.listFiles({
-    tags:['food','model','resort']
+    tags:['food','model','resort','work']
   })
   return {
     props: {

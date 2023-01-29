@@ -27,6 +27,11 @@ const navOptions =[
     {
         title:'Projects',
         hasChildren:false,
+    },
+    {
+        title:'Contact',
+        hasChildren:false,
+        link:'/contact'
     }
 ]
 
