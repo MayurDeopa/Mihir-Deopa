@@ -37,7 +37,7 @@ const VideoDrawer:React.FC<VideoDrawerProps>=(props)=>{
             }}
         >
             <div className={styles.video_player}>
-                <video src={videoSrc} autoPlay  loop playsInline className={styles.video_player_video}/>
+                <video src={videoSrc} playsInline className={styles.video_player_video} controls autoPlay/>
                 
             </div>
             <div className={styles.video_player_close} onClick={action}>
