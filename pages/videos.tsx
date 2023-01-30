@@ -16,7 +16,7 @@ export default function Personal({result}:InferGetStaticPropsType<typeof getStat
       <title>Mihir Deopa | Videos</title>
 
     </Head>
-      <ImageGrid columnWidth='15rem'>
+      <ImageGrid columnWidth='10rem'>
         {videos.map((video:any,index:number)=>{
           return(
             <Video key={index} src={video.url} />
