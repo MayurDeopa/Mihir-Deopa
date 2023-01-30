@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 
+import { CgClose } from 'react-icons/cg'
+
 import styles from '../../styles/Navigator.module.css'
 
 
 type options={
-    title:string,
+    title?:string,
     hasChildren:boolean,
     children?:options[],
     link?:string
@@ -52,7 +54,6 @@ const navOptions2 =[
         link:'/videos'
     },
     {
-        title:"<-",
         hasChildren:false,
     }
 ]
@@ -92,7 +93,7 @@ const NavigatorOptions:React.FC<NavigatorOptionsProps> =(props)=>{
                     else{
                         return(
                             <div key={index} className={styles.option} onClick={action}>
-                                {o.title}
+                                {o.title || <div style={{fontSize:'25px',display:'flex',alignItems:"center",justifyContent:'center'}}><CgClose/></div>}
                             </div >
                         )
                     }
