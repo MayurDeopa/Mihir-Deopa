@@ -47,6 +47,11 @@ const navOptions2 =[
         link:'/work'
     },
     {
+        title:"Videos",
+        hasChildren:false,
+        link:'/videos'
+    },
+    {
         title:"<-",
         hasChildren:false,
     }
