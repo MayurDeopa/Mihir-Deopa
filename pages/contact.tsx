@@ -17,7 +17,7 @@ export default function Contact() {
     </Head>
       <Layout>
         <div className={styles.wrapper}>
-            <h5 className={styles.description}>For any inquiries about shootings and collaborations please send me a message on</h5>
+            <h5 className={styles.description}>For any inquiries about shoots and collaborations please send me a message on</h5>
             <div style={{display:'flex',flexDirection:'row'}}>
                 <a href='https://www.linkedin.com/in/mihir-deopa-371b5422b/' target='_blank' className={styles.icons}> 
                     <AiOutlineLinkedin/>

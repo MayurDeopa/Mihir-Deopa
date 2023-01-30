@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    animation: fade-up 0.3s ease-in-out;
 }
 
 .description{
@@ -22,3 +23,12 @@
     font-size: 25px;
 }
 
+@keyframes fade-up {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
