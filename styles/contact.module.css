@@ -7,12 +7,14 @@
     justify-content: center;
     align-items: center;
     gap: 1rem;
+    color: var(--text-color);
     animation: fade-up 0.3s ease-in-out;
 }
 
 .description{
     text-align: center;
     font-size: 20px;
+    
 
 }
 
