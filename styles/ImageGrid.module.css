@@ -6,6 +6,7 @@
     place-items: center;
     padding: 10px 0;
     animation: fade-up 0.5s ease-in-out;
+    -webkit-animation: fade-up 0.5s ease-in-out;
 }
 
 .image_wrapper{
